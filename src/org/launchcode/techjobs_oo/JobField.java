@@ -19,7 +19,7 @@ public abstract class JobField {
 
     @Override
     public String toString() {
-        if (value.equals("")) {
+        if (value == null || value.trim().equals("")) {
             return "Data not available";
         }
         return value;
